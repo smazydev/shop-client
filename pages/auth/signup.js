@@ -13,9 +13,7 @@ export default () => {
         email,
         password,
       });
-      console.log(response.data);
     } catch (err) {
-      console.log(err.response.data);
       setErrors(err.response.data.errors);
     }
   };
